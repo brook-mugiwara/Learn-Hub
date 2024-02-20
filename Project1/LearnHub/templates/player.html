@@ -1,0 +1,46 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Player</title>
+    <link rel="stylesheet" href="{% static 'css/player_style.css' %}">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="left-content">
+            <div class="sub-text">
+                <p>You're Watching...</p>
+            </div>
+            <div class="text">
+                <p class="text-text">The name of the Video Goes here</p>
+            </div>
+        </div>
+        <div class="profile-container">
+            <img src="{% static 'img\profile.png' %}" alt="img">
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="bottom-top-bar">
+            <div class="navigate-bar">
+                <div>
+                    <img src="{% static 'img/next.png' %}" alt="" class="next">
+                </div>
+                <div>
+                    <img src="{% static 'img/next.png' %}" alt="" class="prev">
+                </div>
+            </div>
+            <div class="download-pdf">
+
+            </div>
+        </div>
+        <div class="player">
+            <iframe src="https://www.youtube.com/embed/Ricz0aLIR9s" class="video-player"></iframe>
+            <div class = 'notes-box'>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

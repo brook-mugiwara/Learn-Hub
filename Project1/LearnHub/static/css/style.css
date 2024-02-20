@@ -1,0 +1,131 @@
+
+@font-face {
+    font-family: Fredoka;
+    src: url('Fredoka-Light.ttf');
+}
+body{
+    font-family: Fredoka;
+}
+
+h1{
+    font-size: 250%;    
+}
+a {
+    text-decoration: none;
+}
+nav{
+    justify-content:space-between;
+    align-items: center;
+    display: flex;
+    margin: 50px ;
+    margin-bottom: 0px;
+}
+
+
+.logo-main{
+    display: flex;
+    border: solid;
+    padding: 3px;
+    width: 250px;
+}
+
+.logo-main:hover{
+    cursor:default;
+}
+.logo1 {
+    background-color: black;
+}
+
+.learn{
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;    
+    color: white;
+}
+
+.hub{
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+
+.nav-bar{
+    display: flex;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 1rem;    
+}
+.nav-items {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.signin {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 80px;
+    margin-left: 3rem;
+    margin-top : 1.3rem;
+    border-radius: 30px;
+}
+
+
+.signin-text{
+    margin-top: 7px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.signin:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+.home-container{
+    display: flex;
+    justify-content: center;
+}
+
+.home-img{
+    display: flex;
+    max-width:25%;
+
+}
+.home-content-container{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.home-content-container:hover{
+    cursor: default;
+}
+.join-us-container{
+    display: flex;
+    justify-content: center;
+}
+.join-us{
+    background-color: black;
+    height: 70px;
+    width: 200px;
+    border-radius: 50px;
+}
+
+.join-us-text{
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    margin-top: 12px;
+}
+
+.join-us:hover{
+    cursor: pointer;
+    color: black;
+    background-color: gray;
+}
+

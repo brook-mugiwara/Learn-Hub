@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Fredoka;
+    src: url('fonts\Fredoka-Light.ttf');
+}
+body{
+    font-family: Fredoka;
+}
+
+.top-bar{
+    display: flex;
+    justify-content:space-between;
+    border: solid;
+    background-color: black;
+    margin: -8px;
+    height: 150px;
+}
+
+.sub-text{
+    color: gray;
+    margin-left: 30px;
+    font-size: 150%;
+}
+
+.text{
+    color: white;
+    margin-left: 30px;
+    /* border: solid; */
+}
+
+.text-text{
+    font-size: 250%;
+    margin-top: 0%;
+}
+
+.profile-container{
+    display: flex;
+    height: 100px;
+    padding: 20px;
+}
+
+
+.bottom-top-bar{
+    margin: 50px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.navigate-bar{
+    margin: 0px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.next, .prev{
+    width: 45px;
+}
+
+.next{
+    rotate: 180deg;
+}
+
+.download-pdf{
+    margin-left: 50px;
+    width: 30%;
+}
+.player {
+    margin: 50px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.video-player {
+    height: 450px;
+    width : 900px;
+}
+
+.notes-box{
+    width: 30%;
+    margin-left: 50px;
+    border: solid;
+}
