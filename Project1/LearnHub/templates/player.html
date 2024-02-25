@@ -6,38 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearnHub - Player</title>
     <link rel="stylesheet" href="{% static 'css/player_style.css' %}">
+    
 </head>
 <body>
+    <div class="menu-container">
+        
+    </div>
     <div class="top-bar">
         <div class="left-content">
             <div class="sub-text">
                 <p>You're Watching...</p>
             </div>
             <div class="text">
-                <p class="text-text">The name of the Video Goes here</p>
+                <p class="text-text">{{video_name}}</p>
             </div>
         </div>
         <div class="profile-container">
-            <img src="{% static 'img\profile.png' %}" alt="img">
+            <img src="{% static 'img/menu-bar.png' %}" alt="img" style="background-color: white; padding: 20px; border-radius: 20px;">
         </div>
     </div>
     <div class="main-container">
         <div class="bottom-top-bar">
             <div class="navigate-bar">
                 <div>
-                    <img src="{% static 'img/next.png' %}" alt="" class="next">
-                </div>
-                <div>
                     <img src="{% static 'img/next.png' %}" alt="" class="prev">
                 </div>
+                <div>
+                    <img src="{% static 'img/next.png' %}" alt="" class="next">
+                </div>
             </div>
-            <div class="download-pdf">
+            <div class="download-pdf">  
+                <p class="download-text">
+                    <a href="{% static 'hh.pdf' %}" download>
+                        Click here to Download Notes</p>
+                    </a>
+            </div>
+            <div class="quiz-container">
+                <a href="{% url 'quiz' %}">
+                    <div class = "quiz-box">
+                        <p class="quiz-text">Quiz</p>
+                        <img src="{% static 'img/next.png' %}" alt="" class="next" style="height: 30px; width: 30px;">
+                    </div>
 
+                </a>
             </div>
         </div>
         <div class="player">
-            <iframe src="https://www.youtube.com/embed/Ricz0aLIR9s" class="video-player"></iframe>
+            <iframe src="https://www.youtube.com/embed/{{video_key}}" class="video-player"></iframe>
             <div class = 'notes-box'>
+                {% for x in dict_list %}
+                    <!-- <a href="{% url 'next_video' %}?id={{ playlist_id }}"> -->
+                    <a href="{% url 'change_video' %}?id={{ playlist_id }}&new_video_key={{x.video_id}}" style="color: black;text-decoration: none;">
+                        <div class="notes-element">
+                            <div class="thumbnail-container">
+                                <img src="https://img.youtube.com/vi/{{x.video_id}}/maxresdefault.jpg" alt="">
+                            </div>
+                            <h3 class="bb">{{x.title}}</h3>
+                        </div>
+                    </a>
+                {% endfor %}
 
             </div>
         </div>

@@ -1,0 +1,58 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{% static 'css/quiz_style.css' %}">
+</head>
+<body>
+    <div class="title-bar">
+        <img src="{% static 'img/quiz.jpg' %}" alt="" class="quiz-img">
+        <h3 class="quiz-title">QUIZ TIME</h3>
+    </div>
+    <hr>
+    <div class="quiz-container">
+        {% for key, value in ques.items %}
+            <div class="quiz-element">
+                <div class="question-box">
+                    <p>{{key}}</p>
+                </div>
+                <div class="answer-box">
+                    <table class="options">
+                        <tr>
+                            <td>
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="html">{{value.0}}</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="html">{{value.1}}</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="html">{{value.2}}</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="html">{{value.3}}</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr>
+        {% endfor %}
+        <div class="bottom-container">
+            <div class="submit-button">
+                <p>Click Here to Submit</p>
+            </div>
+        </div>
+        </div>
+        
+    
+</body>
+</html>

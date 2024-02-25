@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Fredoka;
+    src: url('fonts/Fredoka-Light.ttf');
+}
+
+body{
+    font-family: Fredoka;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.title-bar{
+    display: flex;
+    margin: 10px;
+}
+
+.quiz-img{
+    width: 8%;
+    height: 8%;
+}
+
+.quiz-title{
+    font-size: 300%;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+hr{
+    height: 3px;
+    color: black;
+    background-color: black;
+}
+.quiz-container{
+    margin: 30px;
+    border: solid;
+}
+
+.quiz-element{
+    margin: 30px;
+    height: 400px;
+}
+
+.question-box{
+    margin: 10px;
+    height: 100px;
+}
+
+.question-box p{
+    font-size: 200%;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.answer-box{
+    margin: 10px;
+    height: 260px;
+    text-align: right;
+}
+
+.options{
+    width: 1250px;
+    margin: 10px;
+    margin-top: 80px;
+    margin-left: auto;
+    /* border: solid; */
+}
+
+tr{
+    height: 100px;
+}
+
+td{
+    padding-left: 30px;
+    font-size: 150%;
+    /* border: solid; */
+}
+
+.quiz-container hr{
+    background-color: gray;
+    border: none;
+    height: 1px;
+    width: 90%;
+}
+
+.bottom-container{
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    text-align: right;
+    /* margin-top: 100px; */
+}
+
+.submit-button{
+    margin-left: auto;
+    width: fit-content;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    transform: translateY(-20px);
+}
+
+.submit-button p{
+    font-size: 130%;
+}
+
+.submit-button:hover{
+    /* color: black; */
+    background-color: gray;
+}

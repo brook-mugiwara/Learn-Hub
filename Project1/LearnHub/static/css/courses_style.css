@@ -1,7 +1,7 @@
-/* @font-face {
+@font-face {
     font-family: Fredoka;
-    src: url('fonts\Fredoka-Light.ttf');
-} */
+    src: url('fonts/Fredoka-Light.ttf');
+}
 body{
     font-family: Fredoka;
     margin: 0px;
@@ -152,7 +152,8 @@ a{
     margin : 10px 0px;
     width: auto;
     cursor: pointer;
-    font-size: 100%;
+    text-align: left;
+    font-size: 85%;
     border: solid;
     border-color: white;
     border-radius: 30px;

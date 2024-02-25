@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Hub</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
 </head>
 <body>
     <nav>
@@ -21,9 +22,15 @@
         </div>
         <div class="nav-bar">
             <ul class="nav-items">
-                <li>Home</li>
-                <li>About</li>
-                <li>Courses</li>
+                <a href="{% url 'home' %}" style="color: black;">
+                    <li>Home</li>
+                </a>
+                <a href="" style="color: black;">
+                    <li>About</li>
+                </a>
+                <a href="{% url 'courses' %}" style="color: black;">
+                    <li>Courses</li>
+                </a>
             </ul>
             <div class="signin">
                 <p class="signin-text">Sign In</p>
@@ -36,7 +43,7 @@
         </div>
         <div class="home-content-container">
             <p>
-                Explore the best in education, right at your fingertips.<br>Learn, grow, and excel with us!
+                Curated Playlist based on Sentiments, Like Ratio and recency. AI generated Text and Quizzes <br>For next level Online Learning.
             </p>
         </div>
         <div class="join-us-container">
